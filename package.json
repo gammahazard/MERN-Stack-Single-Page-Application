@@ -1,0 +1,40 @@
+{
+  "engines": { "node": ">=12.19.0" },
+  "name": "mern-stack-single-page-app-shopping-cart-parking-ticket-payment-system",
+  "version": "1.0.0",
+  "description": "MERN shopping-cart-partking-ticket-payments",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "devmode": "concurrently \"npm run server\" \"npm run client\"",
+    "importdata": "node backend/seeder",
+    "destroydata": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://test.io"
+  },
+  "author": "gammahazard",
+  "license": "ISC",
+  "bugs": {
+    "url": "http://test.io"
+  },
+  "homepage": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  }
+}
